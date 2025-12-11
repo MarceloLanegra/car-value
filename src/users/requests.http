@@ -23,3 +23,12 @@ Content-Type: application/json
 
 ### Delete a user by id
 DELETE http://localhost:3000/auth/2
+
+### Signin a user
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "test@examples.com",
+    "password": "password"
+}
