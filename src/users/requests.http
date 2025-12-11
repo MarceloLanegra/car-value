@@ -3,9 +3,24 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-    "email": "test@examples.com",
+    "email": "test@example2.com",
     "password": "password"
 }
+
+### Signin a user
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "test@example2.com",
+    "password": "password"
+}
+
+### Who am I
+GET http://localhost:3000/auth/whoami
+
+### Signout a user
+POST http://localhost:3000/auth/signout
 
 ### Find a user by id
 GET http://localhost:3000/auth/1
@@ -23,12 +38,3 @@ Content-Type: application/json
 
 ### Delete a user by id
 DELETE http://localhost:3000/auth/2
-
-### Signin a user
-POST http://localhost:3000/auth/signin
-Content-Type: application/json
-
-{
-    "email": "test@examples.com",
-    "password": "password"
-}
